@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+body{
+    background-color: rgb(50, 53, 52);
+}
+div{
+    text-align: center;
+    margin: 10px;
+}
+a{
+    color: aliceblue;
+}
