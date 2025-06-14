@@ -8,7 +8,7 @@
     font-size: 1em;
 }
 
-body{
+html, body{
     min-height: 100vh;
     background-color: darkgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,6 +17,7 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    min-width: 100vw;
 }
 header h1{
     padding-top: 50px;
@@ -27,13 +28,13 @@ header h1{
 header h1:hover{
     text-decoration: underline;
 }    
-a#autor{
+a{
     
     text-decoration: none;
     color: white;
     font-weight: bolder;
 }
-#autor:hover{
+a:hover{
     text-decoration: underline;
 }
 main{
@@ -41,6 +42,31 @@ main{
     background-color: white;
     border-radius: 1px solid black;
     margin: 20px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+section.normal{
+    background-color: white;
+    color: black;
+    
+    
+}
+section.imagem{
+    background-color: black;
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 60vw;
 }
 p{
     
@@ -50,33 +76,9 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-p#fundo{
+footer{
+    background-color: black;
     color: white;
-    background-color: rgba(0, 0, 0, 0.37);
-}
-section{
-    background-color: white;
-    color: black;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
-}
-section#fundoimg1{
-    background-color: black;
-    border-radius: 1px solid black;
-    background-image: url(imagens/background001.jpg);
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-section#fundoimg2{
-    background-color: black;
-    border-radius: 1px solid black;
-    background-image: url(imagens/background002.jpg);
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
+    font-size: larger;
+    text-align: center;
 }
